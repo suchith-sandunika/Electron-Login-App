@@ -1,0 +1,23 @@
+{
+  "name": "electron-login-app",
+  "version": "1.0.0",
+  "description": "electron login app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suchith-sandunika/Electron-Login-App.git"
+  },
+  "author": "suchith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suchith-sandunika/Electron-Login-App/issues"
+  },
+  "homepage": "https://github.com/suchith-sandunika/Electron-Login-App#readme",
+  "devDependencies": {
+    "electron": "^27.1.3"
+  }
+}
