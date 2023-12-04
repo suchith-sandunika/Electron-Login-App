@@ -1,0 +1,67 @@
+/* style.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Basic styling for the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000; 
+  }
+  
+  /* Container for the login form */
+  .maincontainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  /* Style for the header */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for labels */
+  label {
+    font-weight: bold;
+  }
+  
+  /* Style for input fields */
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style for the submit button */
+  input[type="submit"] {
+    background-color: #0099ff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for the submit button */
+  input[type="submit"]:hover {
+    background-color: #66ccff;
+  } 
+
+  /* Reset default margin and padding */
+
+
+  
