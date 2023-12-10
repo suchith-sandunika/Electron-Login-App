@@ -17,7 +17,7 @@ function createWindow() {
   });
   mainWindow.loadFile("src/login.html");
   mainWindow.setMenuBarVisibility(false); 
-  mainWindow.openDevTools();
+  mainWindow.webContents.openDevTools();
 } 
 
 const dbPath = path.join(__dirname, 'Database', 'LoginAppDatabase.db');
@@ -70,12 +70,23 @@ app.whenReady().then(createWindow);
 app.on("window-all-closed", () => {
   if (process.platform !== "darwin") {
     app.quit();
-    console.log("Database Connection Closed !!!")
   }
 });
 
 app.on("activate", () => {
   if (BrowserWindow.getAllWindows().length === 0) {
     createWindow();
+  }
+}); 
+
+app.on('before-quit', () => {
+  if (db) {
+    db.close((err) => {
+      if (err) {
+        console.error(err.message);
+      } else {
+        console.log('Database connection closed');
+      }
+    });
   }
 });

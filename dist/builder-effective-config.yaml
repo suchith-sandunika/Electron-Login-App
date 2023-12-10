@@ -1,0 +1,9 @@
+directories:
+  output: dist
+  buildResources: build
+appId: your.app.id
+win:
+  target: nsis
+  icon: path/to/your/icon.ico
+files: []
+electronVersion: 27.1.3
