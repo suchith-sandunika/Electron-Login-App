@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login-Form</title>
-    <link href="/dist/output.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="../dist/output.css" rel="stylesheet" type="text/css" />
+    <title>Login</title>
   </head>
-    <body>
-        <div class="flex items-center justify-center min-h-screen bg-gray-100">
-            <div class="px-8 py-6 mt-4 text-left bg-white shadow-lg">
-                <h3 class="text-2xl font-bold text-center">Login to your account</h3>
-                <form action="">
-                    <div class="mt-4">
-                        <div>
-                            <label class="block" for="email">Email<label>
-                                    <input type="text" placeholder="Email"
-                                        class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
-                        </div>
-                        <div class="mt-4">
-                            <label class="block">Password<label>
-                                    <input type="password" placeholder="Password"
-                                        class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
-                        </div>
-                        <div class="flex items-baseline justify-between">
-                            <button class="px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Login</button>
-                            <a href="#" class="text-sm text-blue-600 hover:underline">Forgot password?</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
+  <body class="bg-gray-100">
+    <div class="flex items-center justify-center h-screen">
+      <form class="p-6 space-y-8 bg-white border rounded-lg shadow shadow-mdp-5 md:h-260 w-90" action="#" method="POST">
+        <div class="flex items-center justify-center font-bold">
+          <h1 class="text-xl font-bold leading-9 tracking-tight text-center text-gray-900 mb20 -6 p-m-5">
+            Login
+          </h1>
         </div>
-    </body>
+        <div>
+          <div class="flex items-start m-2">
+            <label for="username">Username</label>
+          </div>
+          <div>
+            <input type="usernames" id="username" placeholder="Enter your username" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-black"/>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-start m-2">
+            <label for="password">Password</label>
+          </div>
+          <div>
+            <div class="relative">
+              <input type="password" id="password" placeholder="Enter password" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-black"/>
+              <span id="togglePassword" class="absolute transform -translate-y-1/2 cursor-pointer top-1/2 right-4">
+                <i class="far fa-eye"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center px-3 py-1">
+          <button type="submit" class="block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-10 py-2 font-semibold" id="LoginBtn">
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="../Js/renderer.js"></script>
+  </body>
 </html>
