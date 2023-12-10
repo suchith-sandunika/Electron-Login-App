@@ -17,8 +17,7 @@ const { electron, ipcRenderer  } = require("electron");
       ipcRenderer.on("login-response", (event, { success, message }) => {
         if (success) {
           // Redirect to dashboard or another page
-          window.location.href = 'build/dashboard.html';
-          // Example: window.location.href = 'dashboard.html';
+          window.location.href = '../src/dashboard.html';
           console.log(message);
           alert("Logged to Dashboard !!!");
         } else {
