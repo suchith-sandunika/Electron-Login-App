@@ -1,0 +1,3 @@
+before run use npx tailwind css -i ./src/input.css -o ./dist/output.css --watch and run it in the terminal. Then use Live Server !!!
+electron app running and tailwind css running must be happen in the same time in two terminals !!!
+use npx electronmon . to install electronmon to project !!! 
