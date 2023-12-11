@@ -1,9 +1,9 @@
 directories:
-  output: dist
+  output: app
   buildResources: build
-appId: your.app.id
+appId: com.LoginApp.loginapp
 win:
   target: nsis
-  icon: path/to/your/icon.ico
+  icon: ./icon/icon.jpeg
 files: []
 electronVersion: 27.1.3

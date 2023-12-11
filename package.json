@@ -27,13 +27,13 @@
     "sqlite3": "^5.1.6"
   },
   "build": {
-    "appId": "your.app.id",
+    "appId": "com.LoginApp.loginapp",
     "directories": {
-      "output": "dist"
+      "output": "app"
     },
     "win": {
       "target": "nsis",
-      "icon": "path/to/your/icon.ico"
+      "icon": "./icon/icon.jpeg"
     }
   }
 }
